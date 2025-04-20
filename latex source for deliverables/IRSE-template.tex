@@ -1,0 +1,37 @@
+% !BIB TS-program = biber
+\documentclass[a4paper,11pt]{article}
+
+\input{pre/imports}
+\input{pre/settings}
+\input{pre/commands}
+\input{pre/bibliography}
+
+\begin{document}
+\author{Firstname Lastname (r0??????)}
+\timespent{????????????}{????????????}
+
+\twocolumn[\maketitle]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\LaTeX{} syntax for floats}
+Figures and tables will stay in one column with \verb|\begin{figure}| and \verb|\begin{table}| and you can allow them to stretch across both columns with \verb|\begin{figure*}| and \verb|\begin{table*}|.
+
+\section{\LaTeX{} syntax for citations}
+You can cite sources like \textcite{ouyang_training_2022}.
+
+\section{Style tips}
+Highly recommended is to render your figures as PDFs. For block diagrams, we recommend \href{https://draw.io}{\texttt{draw.io}}. For other visuals (graphs, histograms, bar plots, numerical tables ...) we suggest the \href{https://github.com/bauwenst/fiject}{\texttt{fiject}} Python package.
+
+If you want inspiration about how you could format queries and responses, you could check out the GPT-4 paper \parencite{bubeck_sparks_2023}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\onecolumn
+\appendix
+
+\section*{Bibliography}
+\printbibliography[heading=none]
+
+\end{document}
