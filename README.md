@@ -1,3 +1,5 @@
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 # RAG Recipe Search System
 
 A sophisticated Recipe Retrieval-Augmented Generation (RAG) system that combines TF-IDF and neural embeddings for intelligent recipe search and recommendation.
